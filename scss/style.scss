@@ -1,0 +1,32 @@
+@import "bourbon";
+@import "neat";
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrap {
+    
+    font-family: Ubuntu;
+    color: #333;
+    @include outer-container();
+
+    
+    
+    .content {
+        height: 1000px;
+        background-color: #91E1DB;
+        
+        @include span-columns(8 of 12, block-collapse);
+    }
+
+    .sidebar {
+        height: 600px;
+        background-color: #FBEBC4;
+        
+        @include span-columns(4 of 12);
+    }
+}
+
